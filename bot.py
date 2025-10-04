@@ -1,4 +1,4 @@
-from telegram import ReplyKeyboardMarkup
+from telegram import ReplyKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters 
 import json
 import os
@@ -33,7 +33,7 @@ def total_gastos(usuario_id):
     return 0
 
 
-TOKEN = ""
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 async def start(update, context):
     teclado = [
