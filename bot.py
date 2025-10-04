@@ -33,7 +33,7 @@ def total_gastos(usuario_id):
     return 0
 
 
-TOKEN = "8321192866:AAGjxK--xz2t9x7DwIu2abzAKV6B_r-yUQc"
+TOKEN = ""
 
 async def start(update, context):
     teclado = [
